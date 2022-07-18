@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "font-geral";
+    src: url("font-img/Poppins-Regular.ttf");
+}
+@import url('https://fonts.googleapis.com/css2? family= Yanone+Kaffeesatz:wght@600 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+body {
+    font-family: "font-geral";
+    background: #0f0e0e;
+    min-height: 100vh;
+    border: 0;
+    color: white;
+    margin: 0 auto;
+
+}
+/*Estilizando o HEADER(CABEÇALHO) */
+header{
+    max-width: 1800px;
+    margin-top: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h1-header{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    flex-wrap: nowrap;
+    margin-left: 5rem;
+}
+   
+li{
+    color: #ffffff;
+    display: inline-grid;
+    margin-left: 20px;
+    transition: 1s all;
+    font-size: 19px;
+}
+ul{
+    margin-right: 2rem;
+}
+li:hover{
+    transition: 1s all;
+    color: #584ff5;
+    font-size: 21px;
+    
+}
+.nav-dif{
+    border: 1px solid #584ff5;
+    border-radius: 0.9rem;
+    padding: 5px 10px 5px 10px;
+    transition: 1s all;
+    font-size: 17px;
+}
+.nav-dif:hover{
+    border-color:#cdcdd4;
+    color: #584ff5;
+    transition: 1s all;
+    font-size: 19px;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+    display: none;
+	
+}
+
+
+
+/*Estilizando o main(CONTEUDO PRINCIPAL) */
+main{
+    display: flex;
+    justify-content: center;
+}
+aside{
+    border: 1px solid violet;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    width: 670px;
+}aside p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.header-aside{
+    justify-content: center;
+    display: flex;
+    font-size: 22px;
+    margin-top: 19px;
+    margin-bottom: 17px;
+}
+.icones-aside img{
+    width: 3rem;
+    margin: 0px 1rem 0 1rem;
+    cursor: pointer;
+    
+}
+.icones-aside{
+    justify-content: center;
+    display: flex;
+    margin: 0 2rem 0 2rem;
+}
+.form {
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+   position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #828CAD;
+}
+
+.form-control input {
+    display: flex;
+    border: 2px solid #3E445B;
+    border-radius: 4px;
+    width: 570px;
+    justify-content: center;
+    background-color:#0f0e0e;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+.form button {
+    background-color: #857ff1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #584ff5;
+    transition: 0.3s;
+}
+
+/*Fazendo a adaptação do site para dispositivos menores */
+
+@media (max-width:1400px) {
+    aside{
+        margin-left: 4rem;
+        margin-top: 5rem;
+    }
+    
+    .h1-header{
+        font-size: 18px;
+    }
+    li{
+        font-size: 16px;
+    }
+    .nav-dif{
+        font-size: 16px;
+    }
+
+    
+}
+
+@media (max-width:850px){
+    .header-aside{
+        justify-content: center;
+        display: flex;
+        font-size: 22px;
+        margin-top: 19px;
+        margin-bottom: 17px;
+    }
+
+    .icones-aside img{
+        width: 2.7rem;
+        margin: 0px 1rem 0 1rem;
+        cursor: pointer;
+        
+    }
+    .form-control input{
+        width: 50vw;
+    }
+
+    main{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+        margin-left:auto ;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .h1-header{
+        font-size: 20px;
+        margin-left: 1rem;
+    }
+    .checkbtn {
+		display: block;
+	}
+	ul{
+		position: absolute;
+		width: 100%;
+		height: 44vh;
+		background: #0a051a;
+		top: 50px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+	}
+    li{
+        margin-top: 20px;
+    }
+    #check:checked ~ ul {
+		left: 0;
+	}
+}
+@media (max-width:400px) {
+    .header-aside{
+        font-size: 4.4vw;
+    }
+    .h1-header{
+        font-size: 4.4vw;
+    }
+    .icones-aside img{
+        width: 9vw;
+    }
+    .form-control label{
+        font-size: 4vw;
+    }
+    .form-control small{
+        font-size: 4vw;
+    }
+    aside p{
+        font-size: 3.6vw;
+    }
+    .form-control input{
+        padding: 5px;
+    }
+    .form-control i{
+        top: 34px;
+    }
+    .form button{
+        padding: 6px;
+        font-size: 10px;
+    }
+}
